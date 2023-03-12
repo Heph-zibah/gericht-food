@@ -20,8 +20,8 @@ const Nav = () => {
             </ul>
         </nav>
         <div className='r'>
-            <Link to="#">Login/Registration</Link>
-            <Link to="#">Book table</Link>
+            <Link to="/">Login/Registration</Link>
+            <Link to="/">Book table</Link>
             <div className='menu__open'>
                 <FiMenu/>
             </div>
@@ -37,8 +37,8 @@ const Nav = () => {
                         return <li key={id}><a href={url}>{link}</a></li>
                     })}
                 </ul>
-                <Link to="#">Login/Registration</Link>
-                <Link to="#">Book table</Link>
+                <Link to="/">Login/Registration</Link>
+                <Link to="/">Book table</Link>
             </div>
         </div>
     </header>
