@@ -11,8 +11,8 @@ export const navLinks = [
     },
     {
         id: 3,
-        url: '/cintact us',
-        link: 'cintact us'
+        url: '/contact us',
+        link: 'contact us'
     },
     {
         id: 4,
