@@ -23,26 +23,28 @@ const Nav = () => {
         
             <div className='nav__reg'>
                 <Link to="/">Login/Registration</Link>
-                <Link to="/">Book table</Link>
+                <Link to="/">Book Table</Link>
             </div>
             <div className='menu__open' onClick={() => setShowNav(!showNav)}>
                     <FiMenu/>
                 </div> 
         </nav>
-        {showNav && <div className='mobile__nav'>
-            <div className='menu__close'>
-                <FaTimesCircle/>
-            </div>
-            <div>
-                <ul>
-                    {navLinks.map((item) => { 
-                        const {id, url, link} = item
-                        return <li key={id}><a href={url}>{link}</a></li>
-                    })}
-                </ul>
-                <div className="mobile__reg">
-                    <Link to="/">Login/Registration</Link>
-                    <Link to="/">Book table</Link>
+        {showNav && <div className='mobile__nav--container'>
+            <div className='mobile__nav'>
+                <div className='menu__close'>
+                    <FaTimesCircle/>
+                </div>
+                <div className='mobile__links'>
+                    <ul>
+                        {navLinks.map((item) => { 
+                            const {id, url, link} = item
+                            return <li key={id}><a href={url}>{link}</a></li>
+                        })}
+                    </ul>
+                    <div className="mobile__reg">
+                        <Link to="/">Login/Registration</Link>
+                        <Link to="/">Book Table</Link>
+                    </div>
                 </div>
             </div>
         </div>}
