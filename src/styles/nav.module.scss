@@ -1,0 +1,70 @@
+// MOBILE
+header {
+    background-color: $text-color-black;
+    color: $text-color-neutral;
+    padding: 30px;
+    .nav__logo {
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav__links, .nav__reg {
+            display: none;
+        }
+    }
+}
+
+// TABLET
+@media screen and (min-width:601px) {
+    header {
+        padding: 32px 60px;
+        nav {
+            .nav__reg {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 14px 0;
+            } 
+            .nav__reg a:last-child {
+                border-left: 1px solid $text-color-neutral;
+                padding-left: 15px;
+            }
+        }
+        .mobile__reg {
+            display: none;
+        }
+    }
+}
+
+// DESKTOP
+@media screen and (min-width:1200px) {
+    header {
+        padding: 32px 120px;
+        .nav__logo {
+            font-size: 44px;
+        }
+        .menu__open {
+                display: none;  
+        }
+        nav {
+            .nav__links {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                text-transform: capitalize;
+            }
+            .nav__reg {
+                gap: 25px;
+            }
+            .nav__reg a:last-child {
+                padding-left: 25px;
+            }
+        }
+        .mobile__nav {
+            display: none;
+        }
+    }
+}
