@@ -10,7 +10,7 @@ function App() {
      <Nav/>
      <Routes>
      <Route path="/" element={ <Home/> } />
-     <Route path="*" element={<Error/>}/>
+     <Route path="*" element={<Error message="Page not found"/>}/>
      </Routes>
     </div>
   );
