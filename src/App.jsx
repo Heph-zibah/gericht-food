@@ -6,7 +6,7 @@ import Error from "./pages/Error";
 
 function App() {
   return (
-    <div className="">
+    <div className="container">
      <Nav/>
      <Routes>
      <Route path="/" element={ <Home/> } />
