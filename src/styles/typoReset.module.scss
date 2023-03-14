@@ -28,5 +28,19 @@ button {
 
 button:hover {
     background: $text-color-secondary;
+    // color: $text-color-primary;
+}
+h1, h5 {
+    font-family: $font-family-primary;
+}
+h1 {
     color: $text-color-primary;
+    font-size: $font-size-head;
+}
+h5 {
+    color: $text-color-neutral;
+}
+p {
+    color: $text-color-secondary;
+    font-family: $font-family-secondary;
 }
