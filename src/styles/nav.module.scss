@@ -2,10 +2,10 @@
 header {
     background-color: $text-color-black;
     color: $text-color-neutral;
-    padding: 20px;
+    padding: 1.25rem;
     .nav__logo h1{
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: inherit;
     }
     nav {
@@ -21,20 +21,20 @@ header {
 // TABLET
 @media screen and (min-width:601px) {
     header {
-        padding: 32px 60px;
+        padding: 2rem 3.75rem;
         .nav__logo h1{
-            font-size: 34px;
+            font-size: 2.125rem;
         }
         nav {
             .nav__reg {
                 display: flex;
                 align-items: center;
-                gap: 15px;
-                padding: 14px 0;
+                gap: 0.94rem;
+                padding: 0.88rem 0;
             } 
             .nav__reg a:last-child {
                 border-left: 1px solid $text-color-neutral;
-                padding-left: 15px;
+                padding-left: 0.94rem;
             }
         }
         .mobile__reg {
@@ -46,9 +46,9 @@ header {
 // DESKTOP
 @media screen and (min-width:1200px) {
     header {
-        padding: 32px 120px;
+        padding: 2rem 7.5rem;
         .nav__logo h1{
-            font-size: 44px;
+            font-size: 2.75rem;
         }
         .menu__open {
                 display: none;  
@@ -57,14 +57,14 @@ header {
             .nav__links {
                 display: flex;
                 align-items: center;
-                gap: 30px;
+                gap: 1.86rem;
                 text-transform: capitalize;
             }
             .nav__reg {
-                gap: 25px;
+                gap: 1.56rem;
             }
             .nav__reg a:last-child {
-                padding-left: 25px;
+                padding-left: 1.67rem;
             }
         }
         .mobile__nav--container {
