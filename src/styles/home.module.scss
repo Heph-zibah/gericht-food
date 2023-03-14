@@ -1,0 +1,17 @@
+.hero__container {
+    background-color: $text-color-black;
+    padding: 20px;
+    .hero__info {
+        text-align: center;
+        margin-top: 30px;
+        h5 {
+            font-size: 23px;
+        }
+    }
+    .hero__img {
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
