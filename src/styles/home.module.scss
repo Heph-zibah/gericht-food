@@ -1,5 +1,4 @@
 .hero__container {
-    // background-color: $text-color-black;
     padding: 1.25rem;
     position: relative;
     .hero__info {
@@ -8,9 +7,13 @@
         h5 {
             font-size: 1.44rem;
             text-transform: capitalize;
+            margin-bottom: 8px;
         }
         h1 {
             text-transform: capitalize;
+        }
+        p{
+            margin: 32px 0;
         }
     }
     .hero__img {
@@ -19,6 +22,21 @@
             width: 100%;
         }
     }
+}
+
+@media screen and (min-width:601px) {
+ .hero__container {
+    padding: 2rem 3.75rem;
+    .hero__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 450px;
+            height: 450px;
+        }
+    }
+ }
 }
 
 @media screen and (min-width:1200px){ 
@@ -33,17 +51,13 @@
             padding-right: 100px;
             h5 {
                 font-size: 1.44rem;
-                margin-bottom: 25px;
-
             }
             h1 {
                 font-size: 90px;
                 letter-spacing: 0.04em;
                 line-height: 130%;
             }
-            p{
-                margin: 32px 0;
-            }
+            
         }
         .hero__img {
             width: 100%;
