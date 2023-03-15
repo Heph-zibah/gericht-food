@@ -1,13 +1,15 @@
 import React from 'react'
-import heroImg from '../../assets/hero--img.svg'
+import heroImg from '../../assets/Hero-img.svg'
+import heroImg2 from '../../assets/hero--img.svg'
 
 const Hero = () => {
   return (
     <>
     <section className='hero__container'>
         <div className='hero__img'>
-            <img src={heroImg} alt="food" />
+        <img src={window.innerWidth > 1200 ? heroImg : heroImg2} alt="food" />
         </div>
+        {window.innerWidth > 1200 ? <div className="line"></div> : null}
         <div className='hero__info'>
             <h5>Chase the new Flavour</h5>
             <h1>The key to Fine dining</h1>
