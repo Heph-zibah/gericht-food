@@ -1,17 +1,56 @@
 .hero__container {
-    background-color: $text-color-black;
+    // background-color: $text-color-black;
     padding: 1.25rem;
+    position: relative;
     .hero__info {
         text-align: center;
         margin-top: 1.88rem;
         h5 {
             font-size: 1.44rem;
+            text-transform: capitalize;
+        }
+        h1 {
+            text-transform: capitalize;
         }
     }
     .hero__img {
         width: 100%;
         img{
             width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:1200px){ 
+    .hero__container {
+        display: flex;
+        padding: 48px 7.5rem;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .hero__info {
+            text-align: start;
+            margin-top: 1.88rem;
+            padding-right: 100px;
+            h5 {
+                font-size: 1.44rem;
+                margin-bottom: 25px;
+
+            }
+            h1 {
+                font-size: 90px;
+                letter-spacing: 0.04em;
+                line-height: 130%;
+            }
+            p{
+                margin: 32px 0;
+            }
+        }
+        .hero__img {
+            width: 100%;
+            img{
+                width: 450px;
+                height: 450px;
+            }
         }
     }
 }
